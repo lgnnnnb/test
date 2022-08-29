@@ -2,11 +2,11 @@ import os
 import sys
 import yaml
 def qiangbao():
-    with open('../Data_DMS/biaodanData.yaml', mode='r', encoding='utf-8') as  fileopen:
+    with open('Data_DMS/biaodanData.yaml', mode='r', encoding='utf-8') as  fileopen:
         data=yaml.safe_load(fileopen)
         return data['qiangbao']
 def text():
-    with open('../Data_DMS/biaodanData.yaml', mode='r', encoding='utf-8') as  fileopen:
+    with open('Data_DMS/biaodanData.yaml', mode='r', encoding='utf-8') as  fileopen:
         data=yaml.safe_load(fileopen)
         return data['test']
 if __name__ == '__main__':
