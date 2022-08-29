@@ -15,7 +15,7 @@ class TestDms:
         except:
             logger = logging.getLogger(__name__)
             formatter1 = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            fh = logging.FileHandler("../log/"+str(time.time()) + '.txt',encoding='utf-8')
+            fh = logging.FileHandler("log/"+str(time.time()) + '.txt',encoding='utf-8')
             fh.setFormatter(formatter1)
             logger.addHandler(fh)
             logger.error(traceback.format_exc())
